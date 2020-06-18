@@ -1,3 +1,5 @@
+import {useState} from 'react';
+
 const useInput = (initialValue) => {
     const [value, setInput] = useState(initialValue);
 
