@@ -1,18 +1,8 @@
 import React, {useState} from 'react';
+import useInput from './useInput';
 
 
-const useInput = (initialValue) => {
-  const [value, setInput] = useState(initialValue);
 
-  const onChange = (e) => {
-    const {
-      target: {value}
-    } = e;
-    setInput(value);
-  }
-
-  return {value, onChange};
-}
 
 
 const App = () => {
